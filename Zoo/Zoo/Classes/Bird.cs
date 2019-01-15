@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Bird
+    public abstract class Bird : Animal
     {
+        public virtual string s
     }
 }

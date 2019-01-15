@@ -6,9 +6,9 @@ namespace Zoo.Classes
 {
     public abstract class Animal
     {
-        public abstract string diet { get; set; }
+        public virtual string diet { get; set; }
         public virtual bool tail { get; set; }
-        public abstract int legs { get; set; }
+        public virtual int legs { get; set; }
 
         public abstract void Eat();
         public abstract void Sleep();

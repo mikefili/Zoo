@@ -2,4 +2,4 @@
 
 ### System Design
 
-![System Design](LAB05-Diagram.PNG)
+![System Design](LAB05-Diagram.png)

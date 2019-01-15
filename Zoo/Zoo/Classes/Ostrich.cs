@@ -6,7 +6,7 @@ namespace Zoo.Classes
 {
     public abstract class Ostrich : Bird
     {
-        public override bool CanFly { get => base.CanFly; set => base.CanFly = false; }
+        public override bool canFly { get => base.canFly; set => base.canFly = false; }
         public override bool tail { get => base.tail; set => base.tail = true; }
         public virtual int height { get; set; }
 

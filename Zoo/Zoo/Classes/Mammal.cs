@@ -6,7 +6,7 @@ namespace Zoo.Classes
 {
     public abstract class Mammal : Animal
     {
-        public override int legs { get; set; }
+        public override int legs { get => base.legs; set => base.legs = 4; }
         public virtual int stomachs { get; set; }
         public virtual bool horned { get; set; }
 

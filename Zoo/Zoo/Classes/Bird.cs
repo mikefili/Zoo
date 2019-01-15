@@ -6,6 +6,12 @@ namespace Zoo.Classes
 {
     public abstract class Bird : Animal
     {
-        public virtual string s
+        public override string diet { get; set; }
+        public override int legs { get; set; }
+        public virtual bool CanFly { get; set; }
+
+        public abstract void Fly();
+        public abstract void Migrate();
+        public abstract void LayEggs();
     }
 }

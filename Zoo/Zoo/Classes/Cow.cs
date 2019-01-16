@@ -4,19 +4,30 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public abstract class Cow : Mammal
+    public class Cow : Mammal
     {
-        public override string diet { get => base.diet; set => base.diet = "herbivore"; }
-        public override bool horned { get => base.horned; set => base.horned = true; }
-        public override int stomachs { get => base.stomachs; set => base.stomachs = 4; }
+        public override string Diet { get => base.Diet; set => base.Diet = "herbivore"; }
+        public override bool Horned { get => base.Horned; set => base.Horned = true; }
+        public override int Stomachs { get => base.Stomachs; set => base.Stomachs = 4; }
 
-        public abstract string PlowField();
-        public abstract void Graze();
+        public string PlowField()
+        {
+            return "I help plow the fields.";
+        }
+
         public override string Sound()
         {
-            string message = "Moo! Moo! Moo!";
-            Console.WriteLine(message);
-            return message;
+            return "Moo! Moo! Moo!";
+        }
+
+        public override bool Hibernate()
+        {
+            return false;
+        }
+
+        public override void Eat()
+        {
+            return;
         }
     }
 }

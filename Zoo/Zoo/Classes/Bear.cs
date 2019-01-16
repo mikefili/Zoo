@@ -6,9 +6,9 @@ namespace Zoo.Classes
 {
     public abstract class Bear : Mammal
     {
-        public override string diet { get => base.diet; set => base.diet = "carnivore"; }
-        public virtual string color { get; set; }
-        public virtual bool swims { get; set; }
+        public override string Diet { get => base.Diet; set => base.Diet = "carnivore"; }
+        public virtual string Color { get; set; }
+        public virtual bool Swims { get; set; }
 
         public override bool Hibernate()
         {
@@ -16,9 +16,7 @@ namespace Zoo.Classes
         }
         public override string Sound()
         {
-            string message = "Roar! Roar! Roar!";
-            Console.WriteLine(message);
-            return message;
+            return "Roar! Roar! Roar!";
         }
     }
 }

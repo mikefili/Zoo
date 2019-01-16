@@ -4,17 +4,44 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public abstract class Ostrich : Bird
+    public class Ostrich : Bird
     {
-        public override bool canFly { get => base.canFly; set => base.canFly = false; }
-        public override bool tail { get => base.tail; set => base.tail = true; }
-        public virtual int height { get; set; }
+        public override bool CanFly { get => base.CanFly; set => base.CanFly = false; }
+        public override bool Tail { get => base.Tail; set => base.Tail = true; }
+        public virtual int Height { get; set; }
 
-        public void Sprint()
+        public string Sprint()
         {
-            Console.WriteLine("I run really fast!!!");
+            return ("I run really fast!!!");
         }
-        public abstract bool BuryHead();
-        public abstract int Grow();
+        public bool BuryHead()
+        {
+            return true;
+        }
+
+        public override void Fly()
+        {
+            return;
+        }
+
+        public override void Migrates()
+        {
+            return;
+        }
+
+        public override void LayEggs()
+        {
+            return;
+        }
+
+        public override void Eat()
+        {
+            return;
+        }
+
+        public override string Sound()
+        {
+            return "Wenk! Wenk! Wenk!";
+        }
     }
 }

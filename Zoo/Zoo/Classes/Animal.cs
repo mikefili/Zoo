@@ -11,10 +11,12 @@ namespace Zoo.Classes
         virtual public int Legs { get; set; }
 
         abstract public void Eat();
+
         virtual public string Sleep()
         {
             return "ZZZ... ZZZ... ZZZ...";
         }
+
         abstract public string Sound();
     }
 }

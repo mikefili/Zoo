@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class Ostrich : Bird
+    public class Ostrich : Bird , IRace
     {
         public override bool CanFly { get => base.CanFly; set => base.CanFly = false; }
         public override bool Tail { get => base.Tail; set => base.Tail = true; }
         public virtual int Height { get; set; }
+        public bool WearBlinders { get; set; } = true;
 
         public string Sprint()
         {
@@ -42,6 +44,11 @@ namespace Zoo.Classes
         public override string Sound()
         {
             return "Wenk! Wenk! Wenk!";
+        }
+
+        public string Race()
+        {
+            return "I am the fastest bird on Earth!";
         }
     }
 }

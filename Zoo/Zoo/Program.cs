@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoo.Classes;
+using Zoo.Interfaces;
 
 namespace Zoo
 {
@@ -17,13 +18,15 @@ namespace Zoo
             Tortise tortise = new Tortise();
             Crocodile crocodile = new Crocodile();
 
-            Console.WriteLine(cow.PlowField());
-            Console.WriteLine(blackbear.ClimbTree());
-            Console.WriteLine(polarBear.Sleep());
-            Console.WriteLine(ostrich.Sprint());
-            Console.WriteLine(goose.Sound());
-            Console.WriteLine(tortise.HideInShell());
-            Console.WriteLine(crocodile.BirdTeethClean());
+            Console.WriteLine($"Cow: {cow.PlowField()}");
+            Console.WriteLine($"Black Bear: {blackbear.ClimbTree()}");
+            Console.WriteLine($"Polar Bear: {polarBear.Sleep()}");
+            Console.WriteLine($"Polar Bear: {polarBear.Prey}");
+            Console.WriteLine($"Polar Bear: {polarBear.HuntingGround()}");
+            Console.WriteLine($"Ostrich: {ostrich.Sprint()}");
+            Console.WriteLine($"Goose: {goose.Sound()}");
+            Console.WriteLine($"Tortise: {tortise.HideInShell()}");
+            Console.WriteLine($"Crocodile: {crocodile.BirdTeethClean()}");
         }
     }
 }

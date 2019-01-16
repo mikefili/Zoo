@@ -11,14 +11,14 @@ namespace Zoo.Classes
         public override bool Tail { get => base.Tail; set => base.Tail = true; }
         public override int Stomachs { get => Stomachs; set => Stomachs = 1; }
 
-        public override void Birth()
-        {
-            Console.WriteLine("I have to nurse my young.");
-        }
-
         public string ClimbTree()
         {
             return "Let's climb a tree!";
+        }
+
+        public override void Birth()
+        {
+            Console.WriteLine("I have to nurse my young.");
         }
 
         public override void Eat()

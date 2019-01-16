@@ -8,7 +8,7 @@ namespace Zoo.Classes
     {
         public override bool CanFly { get => base.CanFly; set => base.CanFly = true; }
         public override bool Tail { get => base.Tail; set => base.Tail = true; }
-        public bool Migrate { get; set; }
+        public bool Migrate { get; set; } = true;
 
         public override void Eat()
         {

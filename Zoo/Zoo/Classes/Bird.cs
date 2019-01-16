@@ -11,7 +11,9 @@ namespace Zoo.Classes
         public virtual bool CanFly { get; set; }
 
         public abstract void Fly();
+
         public abstract void Migrates();
+
         public abstract void LayEggs();
     }
 }

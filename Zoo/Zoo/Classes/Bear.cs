@@ -10,10 +10,16 @@ namespace Zoo.Classes
         public virtual string Color { get; set; }
         public virtual bool Swims { get; set; }
 
+        public void Fishing()
+        {
+            return;
+        }
+
         public override bool Hibernate()
         {
             return true;
         }
+
         public override string Sound()
         {
             return "Roar! Roar! Roar!";

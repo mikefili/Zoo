@@ -4,21 +4,35 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public abstract class Goose : Bird
+    public class Goose : Bird
     {
-        public override bool canFly { get => base.canFly; set => base.canFly = true; }
-        public override bool tail { get => base.tail; set => base.tail = true; }
-        public abstract bool migrate { get; set; }
+        public override bool CanFly { get => base.CanFly; set => base.CanFly = true; }
+        public override bool Tail { get => base.Tail; set => base.Tail = true; }
+        public bool Migrate { get; set; }
 
         public override void Eat()
         {
             Console.WriteLine("I like to eat bread!!!");
         }
+
+        public override void Fly()
+        {
+            return;
+        }
+
+        public override void LayEggs()
+        {
+            return;
+        }
+
+        public override void Migrates()
+        {
+            return;
+        }
+
         public override string Sound()
         {
-            string message = "Quack! Quack! Quack!";
-            Console.WriteLine(message);
-            return message;
+            return "Quack! Quack! Quack!";
         }
     }
 }

@@ -4,20 +4,43 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public abstract class Tortise : Reptile
+    public class Tortise : Reptile
     {
-        public override string diet { get => base.diet; set => base.diet = "herbivore"; }
-        public override bool shell { get => base.shell; set => base.shell = true; }
-        public override int lifespan { get => base.lifespan; set => base.lifespan = 100; }
+        public override string Diet { get => base.Diet; set => base.Diet = "herbivore"; }
+        public override bool Shell { get => base.Shell; set => base.Shell = true; }
+        public override int Lifespan { get => base.Lifespan; set => base.Lifespan = 100; }
 
-        public abstract void HideInShell();
+        public string HideInShell()
+        {
+            return "I hide in my shell when there is danger";
+        }
         public override void Eat()
         {
-            Console.WriteLine("I like to eat plants!!!");
+            return;
         }
-        public override void Sleep()
+        public override string Sleep()
         {
-            Console.WriteLine("ZZZ... ZZZ... ZZZ... I like to sleep.");
+            return ("ZZZ... ZZZ... ZZZ...");
+        }
+
+        public override bool Swim()
+        {
+            return false;
+        }
+
+        public override void LayEggs()
+        {
+            return;
+        }
+
+        public override string Sound()
+        {
+            return "Tuuuuurtle, tuuuuuurtle.";
+        }
+
+        public override bool Hunt()
+        {
+            return false;
         }
     }
 }

@@ -4,20 +4,44 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    public abstract class Crocodile : Reptile
+    public class Crocodile : Reptile
     {
-        public override string diet { get => base.diet; set => base.diet = "carnivore"; }
-        public override bool shell { get => base.shell; set => base.shell = false; }
-        public override bool tail { get => base.tail; set => base.tail = true; }
+        public override string Diet { get => base.Diet; set => base.Diet = "carnivore"; }
+        public override bool Shell { get => base.Shell; set => base.Shell = false; }
+        public override bool Tail { get => base.Tail; set => base.Tail = true; }
 
-        public abstract void BirdTeethClean();
+        public string BirdTeethClean()
+        {
+            return "Little birds clean my teeth!";
+        }
         public override void Eat()
         {
-            Console.WriteLine("I like to eat meat!!!");
+            return;
         }
-        public override void Sleep()
+
+        public override bool Hunt()
         {
-            Console.WriteLine("ZZZ... ZZZ... ZZZ... I like to sleep.");
+            return true;
+        }
+
+        public override void LayEggs()
+        {
+            return;
+        }
+
+        public override string Sleep()
+        {
+            return ("ZZZ... ZZZ... ZZZ...");
+        }
+
+        public override string Sound()
+        {
+            return "Hiss! Hiss! Hiss!";
+        }
+
+        public override bool Swim()
+        {
+            return true;
         }
     }
 }

@@ -24,6 +24,8 @@ namespace Zoo
             Console.WriteLine($"Polar Bear: {polarBear.Prey}");
             Console.WriteLine($"Polar Bear: {polarBear.HuntingGround()}");
             Console.WriteLine($"Ostrich: {ostrich.Sprint()}");
+            Console.WriteLine($"Ostrich: {ostrich.Race()}");
+            Console.WriteLine($"Ostrich: When I race, do I wear blinders? {ostrich.WearBlinders}");
             Console.WriteLine($"Goose: {goose.Sound()}");
             Console.WriteLine($"Tortise: {tortise.HideInShell()}");
             Console.WriteLine($"Crocodile: {crocodile.BirdTeethClean()}");

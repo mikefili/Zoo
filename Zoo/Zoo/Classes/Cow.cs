@@ -25,9 +25,9 @@ namespace Zoo.Classes
             return false;
         }
 
-        public override void Eat()
+        public override string Eat()
         {
-            return;
+            return "I like to eat grass!";
         }
     }
 }

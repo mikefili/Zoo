@@ -10,13 +10,13 @@ namespace Zoo.Classes
         virtual public int Stomachs { get; set; }
         virtual public bool Horned { get; set; }
 
-        virtual public void Birth()
+        virtual public string Birth()
         {
-            Console.WriteLine("I give live birth.");
+            return "I give live birth.";
         }
         virtual public void Nurse()
         {
-
+            return;
         }
         virtual public bool Hibernate()
         {

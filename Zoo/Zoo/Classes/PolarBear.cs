@@ -17,18 +17,18 @@ namespace Zoo.Classes
         {
             return;
         }
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("I like to eat meat!!!");
+            return "I like to eat meat!!!";
         }
         public override string Sleep()
         {
             return ("ZZZ... ZZZ... ZZZ...");
         }
 
-        public override void Birth()
+        public override string Birth()
         {
-            return;
+            return "I have to nurse my young.";
         }
 
         public override void Nurse()

@@ -14,9 +14,9 @@ namespace Zoo.Classes
         {
             return "I hide in my shell when there is danger";
         }
-        public override void Eat()
+        public override string Eat()
         {
-            return;
+            return "I like to eat plants!!!";
         }
         public override string Sleep()
         {

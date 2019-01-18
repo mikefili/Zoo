@@ -14,9 +14,9 @@ namespace Zoo.Classes
         {
             return "Little birds clean my teeth!";
         }
-        public override void Eat()
+        public override string Eat()
         {
-            return;
+            return "I like to eat meat!!!";
         }
 
         public override bool Hunt()

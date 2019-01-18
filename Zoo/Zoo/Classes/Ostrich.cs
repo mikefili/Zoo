@@ -36,9 +36,9 @@ namespace Zoo.Classes
             return;
         }
 
-        public override void Eat()
+        public override string Eat()
         {
-            return;
+            return "I like to eat bugs!!!";
         }
 
         public override string Sound()

@@ -10,9 +10,9 @@ namespace Zoo.Classes
         public override bool Tail { get => base.Tail; set => base.Tail = true; }
         public bool Migrate { get; set; } = true;
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("I like to eat bread!!!");
+            return "I like to eat bread!!!";
         }
 
         public override void Fly()

@@ -16,14 +16,14 @@ namespace Zoo.Classes
             return "Let's climb a tree!";
         }
 
-        public override void Birth()
+        public override string Birth()
         {
-            Console.WriteLine("I have to nurse my young.");
+            return "I have to nurse my young.";
         }
 
-        public override void Eat()
+        public override string Eat()
         {
-            Console.WriteLine("I like to eat meat!!!");
+            return "I like to eat meat!!!";
         }
 
         public override string Sleep()

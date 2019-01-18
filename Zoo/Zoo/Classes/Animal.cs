@@ -10,7 +10,7 @@ namespace Zoo.Classes
         virtual public bool Tail { get; set; }
         virtual public int Legs { get; set; }
 
-        abstract public void Eat();
+        abstract public string Eat();
 
         virtual public string Sleep()
         {
